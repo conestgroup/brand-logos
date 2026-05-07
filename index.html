@@ -66,10 +66,17 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
 .pros li::before { content: '+'; position: absolute; left: 0; color: #059669; font-weight: 700; }
 .cons li::before { content: '−'; position: absolute; left: 0; color: #dc2626; }
 
-.variants-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.variants-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 800px) { .variants-grid { grid-template-columns: 1fr; } }
 
+/* LOGO CARD WRAPPER */
+.logo-card-wrap { display: flex; flex-direction: column; gap: 8px; }
+.logo-card-meta { display: flex; align-items: center; justify-content: space-between; padding: 0 2px; }
+.v-tag { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #888; font-weight: 600; }
+.variant-name { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #bbb; text-align: right; }
+
 /* LOGO CARDS — BASE */
+.logo-card-wrap:hover .logo-card { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
 .logo-card {
   border-radius: 18px;
   padding: 40px 28px;
@@ -78,13 +85,9 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
   align-items: center;
   justify-content: center;
   min-height: 180px;
-  position: relative;
   overflow: hidden;
   transition: transform 0.22s, box-shadow 0.22s;
 }
-.logo-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
-.v-tag { position: absolute; top: 13px; right: 14px; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #ccc; }
-.variant-name { position: absolute; bottom: 13px; left: 50%; transform: translateX(-50%); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #ddd; white-space: nowrap; }
 
 /* DIVIDER */
 .section-divider { border: none; border-top: 1px solid #e8e5e0; margin: 0 0 64px; }
@@ -340,8 +343,9 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Elegant</span><span class="variant-name">Open book + upward arrow</span></div>
     <div class="logo-card nc-v1">
-      <span class="v-tag">V1 · Elegant</span>
       <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
         <path d="M6 33L6 10Q6 6 10 6L30 6Q34 6 34 10L34 26" stroke="#b8935a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M6 33L34 33" stroke="#b8935a" stroke-width="1.8" stroke-linecap="round"/>
@@ -351,10 +355,11 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
       </svg>
       <div class="wordmark" style="font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:600;color:#2d2218;letter-spacing:3px;text-transform:uppercase;">New Chapter</div>
       <div class="tagline" style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#b8935a;margin-top:4px;">Staffing Group</div>
-      <span class="variant-name">Open book + upward arrow</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Modern</span><span class="variant-name">Gradient badge + bold type</span></div>
     <div class="logo-card nc-v2">
-      <span class="v-tag">V2 · Modern</span>
       <div class="nc-v2-icon">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M4 19L4 8Q4 4 8 4L17 4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -363,17 +368,18 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
         </svg>
       </div>
       <div class="nc-v2-text"><div class="name">NEW CHAPTER</div><div class="sub">Staffing Group</div></div>
-      <span class="variant-name">Gradient badge + bold type</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Classic</span><span class="variant-name">Roman numeral — "a first chapter"</span></div>
     <div class="logo-card nc-v3">
-      <span class="v-tag">V3 · Classic</span>
       <div class="chapter-mark">I.</div>
       <div class="nc-v3-right">
         <div class="name-top">New</div><div class="name-bot">Chapter</div>
         <div class="divider-h"></div>
         <div class="tagline">Staffing Group · Phoenix AZ</div>
       </div>
-      <span class="variant-name">Roman numeral — "a first chapter"</span>
+    </div>
     </div>
   </div>
 </div>
@@ -396,21 +402,24 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Fire</span><span class="variant-name">Oswald type + gradient underline</span></div>
     <div class="logo-card pl-v1">
-      <span class="v-tag">V1 · Fire</span>
       <div class="name">Phoenix Labor</div><div class="line"></div><div class="sub">Workforce Group · Est. 2026</div>
-      <span class="variant-name">Oswald type + gradient underline</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Shield</span><span class="variant-name">Hexagon badge — authority mark</span></div>
     <div class="logo-card pl-v2">
-      <span class="v-tag">V2 · Shield</span>
       <div class="pl-v2-badge"><span>PLG</span></div>
       <div class="pl-v2-text"><div class="name">Phoenix Labor</div><div class="sub">Workforce Group</div></div>
-      <span class="variant-name">Hexagon badge — authority mark</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Flame</span><span class="variant-name">Fire gradient letterform</span></div>
     <div class="logo-card pl-v3">
-      <span class="v-tag">V3 · Flame</span>
       <div class="name">PHOENIX</div><div class="sub" style="font-size:9px;letter-spacing:5px;text-transform:uppercase;color:#d4a88a;margin-top:2px;">Labor · Group</div>
-      <span class="variant-name">Fire gradient letterform</span>
+    </div>
     </div>
   </div>
 </div>
@@ -433,8 +442,9 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Growth Bars</span><span class="variant-name">Rising bars chart</span></div>
     <div class="logo-card aw-v1">
-      <span class="v-tag">V1 · Growth Bars</span>
       <div class="arrow-row" style="display:flex;align-items:flex-end;gap:4px;height:34px;margin-bottom:8px;">
         <span style="display:block;width:6px;height:10px;border-radius:3px 3px 0 0;background:#059669;"></span>
         <span style="display:block;width:6px;height:18px;border-radius:3px 3px 0 0;background:#059669;"></span>
@@ -443,24 +453,26 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
       </div>
       <div class="name" style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#064e3b;"><span style="color:#059669;">ARISE</span></div>
       <div class="sub" style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#aaa;">Workforce Solutions</div>
-      <span class="variant-name">Rising bars chart</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Dawn</span><span class="variant-name">Sunrise arc — new day</span></div>
     <div class="logo-card aw-v2">
-      <span class="v-tag">V2 · Dawn</span>
       <div class="sunrise"></div>
       <div class="name" style="font-family:'DM Sans',sans-serif;font-size:20px;font-weight:700;color:#1e1b4b;letter-spacing:2px;margin-top:8px;">ARISE</div>
       <div class="sub" style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#6366f1;margin-top:2px;">Workforce · Phoenix</div>
-      <span class="variant-name">Sunrise arc — new day</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Triangle</span><span class="variant-name">Upward triangle — peak potential</span></div>
     <div class="logo-card aw-v3">
-      <span class="v-tag">V3 · Triangle</span>
       <svg class="geo" width="42" height="42" viewBox="0 0 42 42" fill="none">
         <polygon points="21,3 39,36 3,36" stroke="#059669" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
         <line x1="21" y1="3" x2="21" y2="20" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
         <circle cx="21" cy="24" r="3" fill="#059669"/>
       </svg>
       <div class="aw-v3-text"><div class="name" style="font-family:'DM Sans',sans-serif;font-size:18px;font-weight:700;color:#064e3b;">ARISE</div><div class="sub" style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#6ee7b7;margin-top:2px;">Workforce Group</div></div>
-      <span class="variant-name">Upward triangle — peak potential</span>
+    </div>
     </div>
   </div>
 </div>
@@ -483,23 +495,26 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Serif</span><span class="variant-name">Earth layers — grounding</span></div>
     <div class="logo-card gw-v1">
-      <span class="v-tag">V1 · Serif</span>
       <div class="name"><span>Ground</span>work</div>
       <div class="bar"><div class="bar-seg" style="width:10px;background:#d97706;"></div><div class="bar-seg" style="width:20px;background:#b45309;"></div><div class="bar-seg" style="width:30px;background:#92400e;"></div><div class="bar-seg" style="width:20px;background:#b45309;"></div><div class="bar-seg" style="width:10px;background:#d97706;"></div></div>
       <div class="sub">Staffing Solutions</div>
-      <span class="variant-name">Earth layers — grounding</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Industrial</span><span class="variant-name">Bold rule — structural strength</span></div>
     <div class="logo-card gw-v2">
-      <span class="v-tag">V2 · Industrial</span>
       <div class="name-big">GROUNDWORK</div><div class="rule"></div><div class="name-small">Staffing · Group</div>
-      <span class="variant-name">Bold rule — structural strength</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Monogram</span><span class="variant-name">Serif G monogram</span></div>
     <div class="logo-card gw-v3">
-      <span class="v-tag">V3 · Monogram</span>
       <div class="monogram">G</div>
       <div class="gw-v3-right"><div class="n1">Ground</div><div class="n2">Work</div><div class="sub">Staffing Group</div></div>
-      <span class="variant-name">Serif G monogram</span>
+    </div>
     </div>
   </div>
 </div>
@@ -522,20 +537,23 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Classic</span><span class="variant-name">Stars + Playfair Display</span></div>
     <div class="logo-card fs-v1">
-      <span class="v-tag">V1 · Classic</span>
       <div class="stars">★ ★ ★</div><div class="name">Freedom</div><div class="sub">Staffing Group</div>
-      <span class="variant-name">Stars + Playfair Display</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Bold</span><span class="variant-name">Navy Bebas — authoritative</span></div>
     <div class="logo-card fs-v2">
-      <span class="v-tag">V2 · Bold</span>
       <div class="name">FREEDOM</div><div class="sub">Staffing Group · Phoenix</div>
-      <span class="variant-name">Navy Bebas — authoritative</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · American</span><span class="variant-name">Split red / blue — flag colors</span></div>
     <div class="logo-card fs-v3">
-      <span class="v-tag">V3 · American</span>
       <div class="name"><span class="free">FREE</span><span class="dom">DOM</span></div><div class="line"></div><div class="sub">Staffing Group</div>
-      <span class="variant-name">Split red / blue — flag colors</span>
+    </div>
     </div>
   </div>
 </div>
@@ -560,23 +578,26 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Precision</span><span class="variant-name">Blue bar + split weight type</span></div>
     <div class="logo-card vg-v1">
-      <span class="v-tag">V1 · Precision</span>
       <div class="vg-v1-top"><div class="vg-v1-bar"></div><div class="vg-v1-text"><div class="name">VAN</div><div class="name2">GUARD</div></div></div>
       <div class="sub">Workforce Solutions · Phoenix</div>
-      <span class="variant-name">Blue bar + split weight type</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Command</span><span class="variant-name">Double chevron — leading edge</span></div>
     <div class="logo-card vg-v2">
-      <span class="v-tag" style="color:#3b5a8a;">V2 · Command</span>
       <svg width="44" height="30" viewBox="0 0 44 30" fill="none" style="margin-bottom:8px;">
         <path d="M3 26L22 3L41 26" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M9 26L22 11L35 26" stroke="#60a5fa" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
       </svg>
       <div class="name">VANGUARD</div><div class="divider-line"></div><div class="sub">Workforce · Phoenix AZ</div>
-      <span class="variant-name">Double chevron — leading edge</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Corporate</span><span class="variant-name">Boxed V — institutional mark</span></div>
     <div class="logo-card vg-v3">
-      <span class="v-tag">V3 · Corporate</span>
       <svg class="vg-v3-emblem" width="52" height="52" viewBox="0 0 52 52" fill="none">
         <rect x="2" y="2" width="48" height="48" rx="10" stroke="#1e3a5f" stroke-width="2" fill="none"/>
         <path d="M13 38L26 14L39 38" stroke="#1e3a5f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -584,7 +605,7 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
         <circle cx="26" cy="12" r="3" fill="#3b82f6"/>
       </svg>
       <div class="vg-v3-words"><div class="name">Vanguard Workforce</div><div class="sub">Phoenix · Est. 2026</div></div>
-      <span class="variant-name">Boxed V — institutional mark</span>
+    </div>
     </div>
   </div>
 </div>
@@ -607,26 +628,29 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Rising Bars</span><span class="variant-name">Ascending bars — growth chart</span></div>
     <div class="logo-card el-v1">
-      <span class="v-tag">V1 · Rising Bars</span>
       <div class="el-v1-icon">
         <span style="height:12px;"></span><span style="height:20px;"></span><span style="height:28px;"></span><span style="height:34px;"></span>
       </div>
       <div class="name"><span style="color:#059669;">ELEVATE</span></div><div class="sub">Staffing Group</div>
-      <span class="variant-name">Ascending bars — growth chart</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Arc</span><span class="variant-name">Upward arc — rising trajectory</span></div>
     <div class="logo-card el-v2">
-      <span class="v-tag">V2 · Arc</span>
       <div class="el-v2-arc"></div>
       <div class="name" style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:#064e3b;letter-spacing:2px;margin-top:4px;">Elevate</div>
       <div class="sub" style="font-size:9px;letter-spacing:5px;text-transform:uppercase;color:#6ee7b7;margin-top:2px;">Staffing Group · Phoenix</div>
-      <span class="variant-name">Upward arc — rising trajectory</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Oversized E</span><span class="variant-name">Display E + light weight contrast</span></div>
     <div class="logo-card el-v3">
-      <span class="v-tag">V3 · Oversized E</span>
       <div class="el-v3-row"><div class="word-e">E</div><div class="word-rest">levate</div></div>
       <div class="sub" style="font-size:9px;letter-spacing:5px;text-transform:uppercase;color:#aaa;margin-top:4px;">Staffing Group · Phoenix AZ</div>
-      <span class="variant-name">Display E + light weight contrast</span>
+    </div>
     </div>
   </div>
 </div>
@@ -649,30 +673,33 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Serif</span><span class="variant-name">Serif F + tapering lines</span></div>
     <div class="logo-card fg-v1">
-      <span class="v-tag">V1 · Serif</span>
       <div class="fg-v1-mark">
         <div class="fg-v1-f">F</div>
         <div class="fg-v1-lines"><span style="width:44px;"></span><span style="width:32px;"></span><span style="width:22px;"></span></div>
       </div>
       <div class="name">FORGE</div><div class="sub">Staffing Group · Phoenix</div>
-      <span class="variant-name">Serif F + tapering lines</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Flame</span><span class="variant-name">Flame icon — forging metaphor</span></div>
     <div class="logo-card fg-v2">
-      <span class="v-tag">V2 · Flame</span>
       <svg class="fg-v2-flame" width="38" height="46" viewBox="0 0 38 46" fill="none">
         <path d="M19 4C19 4 31 16 31 27C31 36 25 43 19 43C13 43 7 36 7 27C7 16 19 4 19 4Z" stroke="#d97706" stroke-width="2" fill="none"/>
         <path d="M19 18C19 18 25 24 25 30C25 35 22 39 19 39C16 39 13 35 13 30C13 24 19 18 19 18Z" fill="#f59e0b" opacity="0.25"/>
         <circle cx="19" cy="31" r="4" fill="#d97706"/>
       </svg>
       <div class="name">FORGE</div><div class="accent"></div><div class="sub">Staffing Group</div>
-      <span class="variant-name">Flame icon — forging metaphor</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Dark Premium</span><span class="variant-name">Gold circle monogram on dark</span></div>
     <div class="logo-card fg-v3">
-      <span class="v-tag" style="color:#3a2a18;">V3 · Dark Premium</span>
       <div class="fg-v3-badge"><span>FG</span></div>
       <div class="name">FORGE</div><div class="sub">Staffing Group · Phoenix</div>
-      <span class="variant-name">Gold circle monogram on dark</span>
+    </div>
     </div>
   </div>
 </div>
@@ -695,24 +722,27 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
     </div>
   </div>
   <div class="variants-grid">
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V1 · Path</span><span class="variant-name">Journey line — point to point</span></div>
     <div class="logo-card ms-v1">
-      <span class="v-tag">V1 · Path</span>
       <div class="ms-v1-path"><div class="ms-v1-dot"></div><div class="ms-v1-line"></div><div class="ms-v1-dot2"></div></div>
       <div class="name"><span style="color:#6366f1;">Mile</span>stone</div><div class="sub">Staffing Solutions</div>
-      <span class="variant-name">Journey line — point to point</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V2 · Stone Marker</span><span class="variant-name">Purple stone badge — landmark</span></div>
     <div class="logo-card ms-v2">
-      <span class="v-tag">V2 · Stone Marker</span>
       <div class="ms-v2-stone"><span>M</span></div>
       <div class="ms-v2-words"><div class="name">Milestone Staffing</div><div class="sub">Phoenix · Est. 2026</div></div>
-      <span class="variant-name">Purple stone badge — landmark</span>
     </div>
+    </div>
+    <div class="logo-card-wrap">
+    <div class="logo-card-meta"><span class="v-tag">V3 · Wordmark</span><span class="variant-name">Bold + light weight split</span></div>
     <div class="logo-card ms-v3">
-      <span class="v-tag">V3 · Wordmark</span>
       <div style="display:flex;align-items:baseline;gap:2px;"><span style="font-family:'Raleway',sans-serif;font-size:28px;font-weight:800;color:#1e1b4b;">Mile</span><span style="font-family:'Raleway',sans-serif;font-size:28px;font-weight:300;color:#6366f1;">stone</span></div>
       <div style="width:100%;height:1px;background:linear-gradient(90deg,#6366f1,transparent);margin:5px 0;"></div>
       <div style="font-size:9px;letter-spacing:5px;text-transform:uppercase;color:#aaa;">Staffing Group · Phoenix AZ</div>
-      <span class="variant-name">Bold + light weight split</span>
+    </div>
     </div>
   </div>
 </div>
