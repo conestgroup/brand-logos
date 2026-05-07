@@ -526,15 +526,16 @@ body { background: var(--page-bg); color: var(--text-dark); font-family: 'DM San
     <div class="logo-tile vg3">
       <div class="tile-meta"><span class="tile-v">V3 · Seal</span><span class="tile-desc">Circular institutional mark — multinational feel</span></div>
       <div class="tile-card" style="background:#fff;">
-        <svg width="130" height="130" viewBox="0 0 130 130" fill="none">
-          <circle cx="65" cy="65" r="60" stroke="#1e3a5f" stroke-width="1.5" fill="none"/>
-          <circle cx="65" cy="65" r="52" stroke="#1e3a5f" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <path d="M40 80L65 36L90 80" stroke="#1e3a5f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="48" y1="68" x2="82" y2="68" stroke="#1e3a5f" stroke-width="1.5"/>
-          <text x="65" y="100" font-family="Josefin Sans" font-size="7" fill="#1e3a5f" text-anchor="middle" letter-spacing="5" font-weight="700">VANGUARD</text>
-          <text x="65" y="112" font-family="DM Sans" font-size="5.5" fill="#94a3b8" text-anchor="middle" letter-spacing="4">WORKFORCE · PHOENIX</text>
-          <path d="M20 88 A52 52 0 0 1 110 88" stroke="#1e3a5f" stroke-width="0.5" fill="none" opacity="0.2"/>
-        </svg>
+        <div style="width:160px;height:160px;border:1.5px solid #1e3a5f;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;position:relative;">
+          <div style="width:140px;height:140px;border:0.5px solid #1e3a5f;border-radius:50%;position:absolute;opacity:0.25;"></div>
+          <svg width="52" height="36" viewBox="0 0 52 36" fill="none">
+            <path d="M4 4L26 32L48 4" stroke="#1e3a5f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="10" y1="20" x2="42" y2="20" stroke="#1e3a5f" stroke-width="1.2"/>
+          </svg>
+          <div style="font-family:'Josefin Sans',sans-serif;font-size:9px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#1e3a5f;">VANGUARD</div>
+          <div style="width:40px;height:0.5px;background:#1e3a5f;opacity:0.3;"></div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:7px;letter-spacing:3px;text-transform:uppercase;color:#94a3b8;">Workforce · Phoenix</div>
+        </div>
       </div>
     </div>
 
@@ -847,7 +848,7 @@ body { background: var(--page-bg); color: var(--text-dark); font-family: 'DM San
       <div class="tile-meta"><span class="tile-v">V1 · Pure Type</span><span class="tile-desc">Typography only — no icon, pure confidence</span></div>
       <div class="tile-card" style="background:#fff;">
         <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:#1a1a1a;line-height:1;letter-spacing:6px;text-transform:uppercase;">Summit</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#1a1a1a;line-height:1;letter-spacing:4px;text-transform:uppercase;">Summit</div>
           <div style="display:flex;align-items:center;gap:10px;margin-top:6px;">
             <div style="width:28px;height:1px;background:#1a1a1a;"></div>
             <div style="font-size:8px;letter-spacing:6px;text-transform:uppercase;color:#888;">Workforce</div>
@@ -878,12 +879,15 @@ body { background: var(--page-bg); color: var(--text-dark); font-family: 'DM San
     <div class="logo-tile sm3">
       <div class="tile-meta"><span class="tile-v">V3 · Negative Space</span><span class="tile-desc">Mountain cut into solid square — luxury mark</span></div>
       <div class="tile-card" style="background:#fff;">
-        <svg width="120" height="100" viewBox="0 0 120 100" fill="none">
-          <rect x="10" y="5" width="100" height="70" rx="4" fill="#1e3a5f"/>
-          <path d="M10 75L35 30L60 55L80 35L110 75Z" fill="#fff"/>
-          <circle cx="80" cy="35" r="3" fill="#fff"/>
-          <text x="60" y="95" font-family="Josefin Sans" font-size="8" fill="#1e3a5f" text-anchor="middle" letter-spacing="8" font-weight="700">SUMMIT WORKFORCE</text>
-        </svg>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+          <div style="width:110px;height:72px;background:#1e3a5f;border-radius:4px;position:relative;overflow:hidden;">
+            <svg width="110" height="72" viewBox="0 0 110 72" style="position:absolute;top:0;left:0;">
+              <path d="M0 72L25 28L50 52L72 30L110 72Z" fill="#fff"/>
+              <circle cx="72" cy="30" r="3" fill="#fff"/>
+            </svg>
+          </div>
+          <div style="font-family:'Josefin Sans',sans-serif;font-size:9px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#1e3a5f;">SUMMIT WORKFORCE</div>
+        </div>
       </div>
     </div>
 
