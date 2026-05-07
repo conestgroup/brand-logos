@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staffing Brand Logos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Bebas+Neue&family=Montserrat:wght@300;400;600;800&family=DM+Sans:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600&family=Space+Grotesk:wght@400;700&family=Oswald:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0d0d0d; color: #fff; font-family: 'DM Sans', sans-serif; padding: 40px 20px; }
+
+h1 { text-align: center; font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; margin-bottom: 8px; }
+.subtitle { text-align: center; color: #666; font-size: 14px; margin-bottom: 60px; letter-spacing: 2px; text-transform: uppercase; }
+
+.brand-section { margin-bottom: 80px; }
+.brand-title { font-size: 13px; text-transform: uppercase; letter-spacing: 3px; color: #555; margin-bottom: 24px; padding-left: 4px; }
+
+.logos-row { display: flex; gap: 24px; flex-wrap: wrap; }
+
+.logo-card {
+  background: #161616;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 40px 32px;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.logo-card:hover { border-color: #444; }
+
+.logo-card.light { background: #f5f5f0; }
+.logo-card.dark-blue { background: #0a1628; }
+.logo-card.warm { background: #1a1208; }
+
+.variant-label {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #444;
+}
+.logo-card.light .variant-label { color: #bbb; }
+
+/* ===================== NEW CHAPTER STAFFING ===================== */
+
+/* NC v1 — Minimal Elegant */
+.nc-v1 { gap: 4px; }
+.nc-v1 .icon { width: 44px; height: 44px; margin-bottom: 12px; }
+.nc-v1 .wordmark { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: #e8e0d0; letter-spacing: 3px; text-transform: uppercase; }
+.nc-v1 .tagline { font-family: 'DM Sans', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #8a7d6a; margin-top: 6px; }
+
+/* NC v2 — Bold Modern */
+.nc-v2 { flex-direction: row; gap: 16px; align-items: center; }
+.nc-v2-icon { width: 52px; height: 52px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.nc-v2-text .name { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #fff; line-height: 1; letter-spacing: 2px; }
+.nc-v2-text .sub { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #6b7280; margin-top: 2px; }
+
+/* NC v3 — Book/Chapter metaphor */
+.nc-v3 { gap: 8px; }
+.nc-v3 .chapter-mark { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 900; color: #c8a96e; line-height: 1; }
+.nc-v3-right { text-align: left; }
+.nc-v3 .name-top { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 5px; text-transform: uppercase; color: #fff; }
+.nc-v3 .name-bot { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300; letter-spacing: 5px; text-transform: uppercase; color: #c8a96e; }
+.nc-v3 .divider { width: 100%; height: 1px; background: #333; margin: 8px 0; }
+.nc-v3 .tagline { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #555; }
+
+
+/* ===================== PHOENIX LABOR GROUP ===================== */
+
+/* PL v1 — Rising Phoenix */
+.pl-v1 { gap: 6px; }
+.pl-v1 .name { font-family: 'Oswald', sans-serif; font-size: 30px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #f97316; }
+.pl-v1 .sub { font-family: 'Lato', sans-serif; font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: #6b7280; }
+.pl-v1 .line { width: 60px; height: 2px; background: linear-gradient(90deg, #f97316, transparent); margin: 8px auto; }
+
+/* PL v2 — Corporate Shield */
+.pl-v2 { flex-direction: row; gap: 14px; align-items: center; background: #fff; }
+.pl-v2-badge { width: 48px; height: 56px; background: #1e3a5f; clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.pl-v2-badge span { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: #fff; letter-spacing: 1px; }
+.pl-v2-text .name { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: #1e3a5f; letter-spacing: 1px; }
+.pl-v2-text .sub { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #94a3b8; margin-top: 2px; }
+
+/* PL v3 — Flame + Wordmark */
+.pl-v3 { gap: 4px; background: #1a0a00; }
+.pl-v3 .name { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 6px; background: linear-gradient(180deg, #fbbf24 0%, #f97316 50%, #dc2626 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
+.pl-v3 .sub { font-family: 'DM Sans', sans-serif; font-size: 10px; letter-spacing: 6px; text-transform: uppercase; color: #78350f; }
+
+/* ===================== ARISE WORKFORCE ===================== */
+
+/* AW v1 — Upward arrow */
+.aw-v1 { gap: 10px; }
+.aw-v1 .icon-wrap { display: flex; align-items: center; gap: 12px; }
+.aw-v1 .arrow-up { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.aw-v1 .arrow-up span { display: block; height: 3px; background: #10b981; border-radius: 2px; }
+.aw-v1 .name { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+.aw-v1 .name em { color: #10b981; font-style: normal; }
+.aw-v1 .sub { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #4b5563; }
+
+/* AW v2 — Dawn/Sunrise */
+.aw-v2 { gap: 8px; background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%); }
+.aw-v2 .sunrise { width: 60px; height: 30px; border-top-left-radius: 60px; border-top-right-radius: 60px; background: linear-gradient(180deg, #fbbf24, #f59e0b); position: relative; overflow: hidden; }
+.aw-v2 .sunrise::after { content: ''; position: absolute; bottom: 0; left: -10px; right: -10px; height: 6px; background: #0f172a; }
+.aw-v2 .name { font-family: 'DM Sans', sans-serif; font-size: 22px; font-weight: 700; color: #fbbf24; letter-spacing: 2px; }
+.aw-v2 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #6366f1; }
+
+/* AW v3 — Clean geometric */
+.aw-v3 { flex-direction: row; gap: 12px; align-items: center; background: #f0fdf4; }
+.aw-v3 .geo { width: 46px; height: 46px; position: relative; flex-shrink: 0; }
+.aw-v3 .geo svg { width: 100%; height: 100%; }
+.aw-v3-text .name { font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 700; color: #064e3b; }
+.aw-v3-text .sub { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #6ee7b7; margin-top: 2px; }
+
+/* ===================== GROUNDWORK STAFFING ===================== */
+
+/* GW v1 — Earth/Foundation */
+.gw-v1 { gap: 6px; background: #0d1117; }
+.gw-v1 .name { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #d97706; letter-spacing: 1px; }
+.gw-v1 .name span { color: #fff; }
+.gw-v1 .bar { display: flex; gap: 3px; margin: 8px 0; }
+.gw-v1 .bar-seg { height: 4px; border-radius: 2px; }
+.gw-v1 .sub { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b7280; }
+
+/* GW v2 — Bold Industrial */
+.gw-v2 { gap: 0; background: #f5f0e8; }
+.gw-v2 .name-big { font-family: 'Bebas Neue', sans-serif; font-size: 44px; color: #1c1008; letter-spacing: 3px; line-height: 1; }
+.gw-v2 .name-small { font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 8px; text-transform: uppercase; color: #92400e; }
+.gw-v2 .rule { width: 100%; height: 3px; background: #1c1008; margin: 10px 0 4px; }
+
+/* GW v3 — Roots/Grid */
+.gw-v3 { gap: 10px; }
+.gw-v3 .monogram { font-family: 'Cormorant Garamond', serif; font-size: 58px; font-weight: 900; color: #854d0e; line-height: 1; }
+.gw-v3-right { display: flex; flex-direction: column; gap: 2px; text-align: left; }
+.gw-v3 .name-top { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
+.gw-v3 .name-bot { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; color: #854d0e; }
+.gw-v3 .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #555; margin-top: 4px; }
+
+
+/* ===================== FREEDOM STAFFING ===================== */
+
+/* FS v1 — Classic Liberty */
+.fs-v1 { gap: 6px; }
+.fs-v1 .name { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: #fff; letter-spacing: 2px; }
+.fs-v1 .stars { color: #3b82f6; font-size: 14px; letter-spacing: 4px; }
+.fs-v1 .sub { font-size: 10px; letter-spacing: 5px; text-transform: uppercase; color: #6b7280; }
+
+/* FS v2 — Breaking Free */
+.fs-v2 { gap: 4px; background: #0f172a; }
+.fs-v2 .name { font-family: 'Bebas Neue', sans-serif; font-size: 46px; letter-spacing: 8px; color: #fff; line-height: 1; }
+.fs-v2 .chain { display: flex; align-items: center; justify-content: center; gap: 0; margin-bottom: 4px; }
+.fs-v2 .sub { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #3b82f6; }
+
+/* FS v3 — American Colors Refined */
+.fs-v3 { gap: 6px; background: #fff; }
+.fs-v3 .name { font-family: 'Oswald', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
+.fs-v3 .name .free { color: #dc2626; }
+.fs-v3 .name .dom { color: #1e3a8a; }
+.fs-v3 .sub { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #9ca3af; }
+.fs-v3 .line { width: 80px; height: 2px; background: linear-gradient(90deg, #dc2626 0%, #1e3a8a 100%); margin: 6px auto; }
+
+</style>
+</head>
+<body>
+
+<h1>Staffing Brand Logos</h1>
+<p class="subtitle">5 brands · 3 variants each</p>
+
+<!-- ===== NEW CHAPTER STAFFING ===== -->
+<div class="brand-section">
+  <p class="brand-title">⭐ New Chapter Staffing — <span style="color:#c8a96e">Recommended</span></p>
+  <div class="logos-row">
+
+    <!-- V1 -->
+    <div class="logo-card warm nc-v1">
+      <span class="variant-label">V1 · Elegant</span>
+      <svg class="icon" viewBox="0 0 44 44" fill="none">
+        <path d="M8 36 L8 12 Q8 8 12 8 L32 8 Q36 8 36 12 L36 28" stroke="#c8a96e" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M8 36 L36 36" stroke="#c8a96e" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 16 L30 16 M14 21 L26 21 M14 26 L22 26" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="33" cy="34" r="6" fill="#c8a96e" opacity="0.2"/>
+        <path d="M30 34 L33 31 L36 34" stroke="#c8a96e" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="wordmark">New Chapter</div>
+      <div class="tagline">Staffing Group</div>
+    </div>
+
+    <!-- V2 -->
+    <div class="logo-card nc-v2">
+      <span class="variant-label">V2 · Bold</span>
+      <div class="nc-v2-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M6 22 L6 10 Q6 6 10 6 L20 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M10 22 L22 22 L22 12" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M16 10 L22 10 L22 16" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="8" cy="24" r="2" fill="#a78bfa"/>
+        </svg>
+      </div>
+      <div class="nc-v2-text">
+        <div class="name">NEW CHAPTER</div>
+        <div class="sub">Staffing Group</div>
+      </div>
+    </div>
+
+    <!-- V3 -->
+    <div class="logo-card dark-blue nc-v3" style="flex-direction:row; gap:16px;">
+      <span class="variant-label" style="color:#555">V3 · Classic</span>
+      <div class="chapter-mark">I.</div>
+      <div class="nc-v3-right">
+        <div class="name-top">New</div>
+        <div class="name-bot">Chapter</div>
+        <div class="divider"></div>
+        <div class="tagline">Staffing Group · Phoenix AZ</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== PHOENIX LABOR GROUP ===== -->
+<div class="brand-section">
+  <p class="brand-title">Phoenix Labor Group</p>
+  <div class="logos-row">
+
+    <!-- V1 -->
+    <div class="logo-card pl-v1">
+      <span class="variant-label">V1 · Fire</span>
+      <div class="name">Phoenix Labor</div>
+      <div class="line"></div>
+      <div class="sub">Workforce Group · Est. 2026</div>
+    </div>
+
+    <!-- V2 -->
+    <div class="logo-card light pl-v2">
+      <span class="variant-label" style="color:#94a3b8">V2 · Corporate</span>
+      <div class="pl-v2-badge"><span>PLG</span></div>
+      <div class="pl-v2-text">
+        <div class="name">Phoenix Labor</div>
+        <div class="sub">Workforce Group</div>
+      </div>
+    </div>
+
+    <!-- V3 -->
+    <div class="logo-card pl-v3">
+      <span class="variant-label" style="color:#78350f">V3 · Flame</span>
+      <div class="name">PHOENIX</div>
+      <div class="sub">Labor · Group · Phoenix AZ</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== ARISE WORKFORCE ===== -->
+<div class="brand-section">
+  <p class="brand-title">Arise Workforce</p>
+  <div class="logos-row">
+
+    <!-- V1 -->
+    <div class="logo-card aw-v1">
+      <span class="variant-label">V1 · Arrow</span>
+      <div class="icon-wrap">
+        <div class="arrow-up">
+          <span style="width:8px"></span>
+          <span style="width:16px"></span>
+          <span style="width:26px"></span>
+          <span style="width:38px"></span>
+        </div>
+        <div>
+          <div class="name"><em>ARISE</em></div>
+          <div class="sub">Workforce Solutions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- V2 -->
+    <div class="logo-card aw-v2">
+      <span class="variant-label">V2 · Dawn</span>
+      <div class="sunrise"></div>
+      <div class="name">ARISE</div>
+      <div class="sub">Workforce · Phoenix</div>
+    </div>
+
+    <!-- V3 -->
+    <div class="logo-card light aw-v3">
+      <span class="variant-label" style="color:#6ee7b7">V3 · Clean</span>
+      <div class="geo">
+        <svg viewBox="0 0 46 46" fill="none">
+          <polygon points="23,4 42,38 4,38" stroke="#059669" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <line x1="23" y1="4" x2="23" y2="22" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="23" cy="26" r="3" fill="#059669"/>
+        </svg>
+      </div>
+      <div class="aw-v3-text">
+        <div class="name">ARISE</div>
+        <div class="sub">Workforce Group</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== GROUNDWORK STAFFING ===== -->
+<div class="brand-section">
+  <p class="brand-title">Groundwork Staffing</p>
+  <div class="logos-row">
+
+    <!-- V1 -->
+    <div class="logo-card gw-v1">
+      <span class="variant-label">V1 · Earthy</span>
+      <div class="name"><span>Ground</span>work</div>
+      <div class="bar">
+        <div class="bar-seg" style="width:12px;background:#d97706"></div>
+        <div class="bar-seg" style="width:24px;background:#92400e"></div>
+        <div class="bar-seg" style="width:36px;background:#78350f"></div>
+        <div class="bar-seg" style="width:24px;background:#92400e"></div>
+        <div class="bar-seg" style="width:12px;background:#d97706"></div>
+      </div>
+      <div class="sub">Staffing Solutions</div>
+    </div>
+
+    <!-- V2 -->
+    <div class="logo-card light gw-v2">
+      <span class="variant-label" style="color:#92400e">V2 · Industrial</span>
+      <div class="name-big">GROUNDWORK</div>
+      <div class="rule"></div>
+      <div class="name-small">Staffing · Group</div>
+    </div>
+
+    <!-- V3 -->
+    <div class="logo-card gw-v3" style="flex-direction:row; gap:14px;">
+      <span class="variant-label">V3 · Serif</span>
+      <div class="monogram">G</div>
+      <div class="gw-v3-right">
+        <div class="name-top">Ground</div>
+        <div class="name-bot">Work</div>
+        <div class="sub">Staffing Group</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FREEDOM STAFFING ===== -->
+<div class="brand-section">
+  <p class="brand-title">Freedom Staffing Group</p>
+  <div class="logos-row">
+
+    <!-- V1 -->
+    <div class="logo-card fs-v1">
+      <span class="variant-label">V1 · Classic</span>
+      <div class="stars">★ ★ ★</div>
+      <div class="name">Freedom</div>
+      <div class="sub">Staffing Group</div>
+    </div>
+
+    <!-- V2 -->
+    <div class="logo-card fs-v2">
+      <span class="variant-label">V2 · Bold</span>
+      <div class="chain">
+        <svg width="120" height="20" viewBox="0 0 120 20">
+          <rect x="2" y="6" width="18" height="8" rx="4" stroke="#475569" stroke-width="1.5" fill="none"/>
+          <rect x="16" y="6" width="18" height="8" rx="4" stroke="#475569" stroke-width="1.5" fill="none"/>
+          <rect x="30" y="6" width="18" height="8" rx="4" stroke="#475569" stroke-width="1.5" fill="none"/>
+          <rect x="44" y="6" width="18" height="8" rx="4" stroke="#475569" stroke-width="1.5" fill="none"/>
+          <line x1="61" y1="10" x2="80" y2="10" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="90" cy="10" r="8" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+          <path d="M86 10 L90 6 L94 10" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M90 6 L90 14" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="110" cy="10" r="6" fill="#3b82f6" opacity="0.3"/>
+          <path d="M107 10 L110 7 L113 10 M110 7 L110 13" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="name">FREEDOM</div>
+      <div class="sub">Staffing Group · Phoenix</div>
+    </div>
+
+    <!-- V3 -->
+    <div class="logo-card light fs-v3">
+      <span class="variant-label" style="color:#9ca3af">V3 · American</span>
+      <div class="name"><span class="free">FREE</span><span class="dom">DOM</span></div>
+      <div class="line"></div>
+      <div class="sub">Staffing Group</div>
+    </div>
+
+  </div>
+</div>
+
+<p style="text-align:center; color:#333; font-size:12px; margin-top:40px; letter-spacing:2px;">ALL CONCEPTS · PHOENIX AZ · 2026</p>
+
+</body>
+</html>
