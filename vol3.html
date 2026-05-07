@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staffing Brand Concepts — Vol. 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500;700&family=Cormorant+Garamond:wght@300;400;600;700&family=Raleway:wght@300;400;600;800&family=Josefin+Sans:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&family=Oswald:wght@400;600&family=Lato:wght@300;400;700&family=DM+Serif+Display&family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; }
+
+.hero {
+  background: #fff;
+  border-bottom: 1px solid #e8e5e0;
+  padding: 56px 48px 48px;
+  text-align: center;
+}
+.hero-tag { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #b8935a; margin-bottom: 14px; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 400; color: #1a1a1a; margin-bottom: 8px; }
+.hero-sub { font-size: 14px; color: #888; max-width: 520px; margin: 0 auto; line-height: 1.6; }
+
+.content { padding: 56px 48px; }
+@media (max-width: 700px) { .content { padding: 32px 20px; } }
+
+.brand-block { margin-bottom: 72px; }
+.brand-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; margin-bottom: 24px; flex-wrap: wrap; }
+.brand-name-area h2 { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+.brand-tag { display: inline-block; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
+.tag-b2b { background: #dbeafe; color: #1e40af; }
+.tag-eco { background: #dcfce7; color: #166534; }
+.tag-asp { background: #fef9c3; color: #713f12; }
+.tag-tech { background: #f3e8ff; color: #6b21a8; }
+.tag-trust { background: #f1f5f9; color: #334155; }
+.tag-bold { background: #fce7f3; color: #9d174d; }
+
+.brand-desc { max-width: 460px; }
+.brand-desc p { font-size: 13px; color: #666; line-height: 1.65; }
+.synergy { margin-top: 10px; font-size: 12px; color: #b8935a; font-style: italic; }
+
+.variants-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 800px) { .variants-grid { grid-template-columns: 1fr; } }
+
+.logo-card-wrap { display: flex; flex-direction: column; gap: 0; }
+.logo-card-meta {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 7px 6px; background: #f2f1ee;
+  border-bottom: 1px solid #e0ddd8;
+}
+.v-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #555; font-weight: 700; }
+.variant-desc { font-size: 9px; color: #999; font-style: italic; }
+
+.logo-card {
+  border-radius: 0 0 18px 18px;
+  padding: 40px 24px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 175px; overflow: hidden;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.logo-card-wrap:hover .logo-card { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(0,0,0,0.10); }
+
+.section-divider { border: none; border-top: 1px solid #e8e5e0; margin: 0 0 56px; }
+
+/* ========== CORNERSTONE STAFFING ========== */
+.cs-v1 { background: #fff; border: 1px solid #eaeaea; gap: 0; }
+.cs-v1-mark { display: flex; align-items: flex-end; gap: 0; margin-bottom: 12px; }
+.cs-v1-block { width: 18px; height: 18px; background: #1e3a5f; }
+.cs-v1-block.tall { height: 28px; }
+.cs-v1-block.med { height: 22px; background: #3b6499; }
+.cs-v1 .name { font-family: 'Josefin Sans', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #1e3a5f; }
+.cs-v1 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #94a3b8; margin-top: 3px; }
+
+.cs-v2 { background: #fdf8f0; border: 1px solid #eedfc0; flex-direction: row; gap: 14px; align-items: center; }
+.cs-v2-diamond { width: 52px; height: 52px; background: #92400e; transform: rotate(45deg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cs-v2-diamond span { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: #fff; transform: rotate(-45deg); display: block; }
+.cs-v2-words .name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: #1c1008; letter-spacing: 1px; }
+.cs-v2-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #b8935a; margin-top: 3px; }
+
+.cs-v3 { background: #eef2f8; border: 1px solid #d8e4f0; gap: 6px; }
+.cs-v3-arch { width: 60px; height: 30px; border: 3px solid #1e3a5f; border-bottom: none; border-radius: 30px 30px 0 0; margin-bottom: 8px; }
+.cs-v3 .name { font-family: 'Raleway', sans-serif; font-size: 20px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #1e3a5f; }
+.cs-v3 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #6b8cba; }
+
+/* ========== BRIDGEWAY STAFFING ========== */
+.bw-v1 { background: #fff; border: 1px solid #eaeaea; gap: 6px; }
+.bw-v1-bridge { display: flex; align-items: flex-end; gap: 0; width: 100px; height: 36px; margin-bottom: 8px; }
+.bw-v1 .name { font-family: 'DM Sans', sans-serif; font-size: 22px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px; }
+.bw-v1 .name em { color: #2563eb; font-style: normal; }
+.bw-v1 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #aaa; }
+
+.bw-v2 { background: linear-gradient(160deg, #eff6ff 0%, #f0f9ff 100%); border: 1px solid #bfdbfe; gap: 6px; }
+.bw-v2 .name { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #1e3a8a; letter-spacing: 1px; }
+.bw-v2 .tagline { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #3b82f6; }
+.bw-v2 .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #93c5fd; margin-top: 2px; }
+
+.bw-v3 { background: #fff; border: 1px solid #eaeaea; flex-direction: row; gap: 14px; align-items: center; }
+.bw-v3-icon { width: 48px; height: 48px; flex-shrink: 0; }
+.bw-v3-words .name { font-family: 'Montserrat', sans-serif; font-size: 19px; font-weight: 800; color: #1a1a1a; }
+.bw-v3-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #aaa; margin-top: 3px; }
+
+/* ========== SUMMIT WORKFORCE ========== */
+.sw-v1 { background: #f8fafe; border: 1px solid #dce8f5; gap: 6px; }
+.sw-v1 .name { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 5px; color: #1e3a5f; line-height: 1; }
+.sw-v1 .sub { font-size: 9px; letter-spacing: 6px; text-transform: uppercase; color: #94a3b8; }
+.sw-v1-peak { margin-bottom: 6px; }
+
+.sw-v2 { background: linear-gradient(160deg, #fff 0%, #f0f7f4 100%); border: 1px solid #d1f0e4; gap: 6px; flex-direction: row; align-items: center; }
+.sw-v2-mark { width: 50px; height: 50px; flex-shrink: 0; }
+.sw-v2-words .name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px; }
+.sw-v2-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #6ee7b7; margin-top: 3px; }
+
+.sw-v3 { background: #1e3a5f; gap: 4px; }
+.sw-v3 .name-top { font-family: 'Josefin Sans', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: 6px; text-transform: uppercase; color: #fff; line-height: 1; }
+.sw-v3 .name-bot { font-family: 'Josefin Sans', sans-serif; font-size: 14px; font-weight: 300; letter-spacing: 8px; text-transform: uppercase; color: #93c5fd; }
+.sw-v3 .rule { width: 40px; height: 2px; background: #60a5fa; margin: 8px auto; }
+
+/* ========== NEXUS STAFFING GROUP ========== */
+.nx-v1 { background: #fff; border: 1px solid #eaeaea; gap: 6px; }
+.nx-v1 .name { font-family: 'Raleway', sans-serif; font-size: 30px; font-weight: 800; color: #1a1a1a; letter-spacing: 2px; }
+.nx-v1 .name em { color: #7c3aed; font-style: normal; }
+.nx-v1 .sub { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #c4b5fd; }
+
+.nx-v2 { background: linear-gradient(145deg, #faf5ff 0%, #f5f3ff 100%); border: 1px solid #ddd6fe; flex-direction: row; gap: 14px; align-items: center; }
+.nx-v2-hex { width: 50px; height: 50px; flex-shrink: 0; }
+.nx-v2-words .name { font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 700; color: #3b0764; }
+.nx-v2-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #a78bfa; margin-top: 3px; }
+
+.nx-v3 { background: #fff; border: 1px solid #eaeaea; gap: 4px; }
+.nx-v3 .name-big { font-family: 'Bebas Neue', sans-serif; font-size: 46px; letter-spacing: 4px; background: linear-gradient(135deg, #7c3aed, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
+.nx-v3 .sub { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #aaa; }
+
+/* ========== STEADFAST WORKFORCE ========== */
+.sf-v1 { background: #fff; border: 1px solid #eaeaea; gap: 6px; }
+.sf-v1 .name { font-family: 'Libre Baskerville', serif; font-size: 23px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px; }
+.sf-v1 .name em { color: #0f766e; font-style: normal; }
+.sf-v1 .rule { width: 50px; height: 2px; background: #0f766e; margin: 8px auto; }
+.sf-v1 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #99a; }
+
+.sf-v2 { background: linear-gradient(145deg, #f0fdfa 0%, #ecfdf5 100%); border: 1px solid #99f6e4; flex-direction: row; gap: 14px; align-items: center; }
+.sf-v2-shield { width: 48px; height: 52px; flex-shrink: 0; }
+.sf-v2-words .name { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; color: #0f4c3a; }
+.sf-v2-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #34d399; margin-top: 3px; }
+
+.sf-v3 { background: #0f4c3a; gap: 6px; }
+.sf-v3 .name { font-family: 'Josefin Sans', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 5px; text-transform: uppercase; color: #fff; }
+.sf-v3 .divider-dots { display: flex; gap: 5px; justify-content: center; margin: 8px 0; }
+.sf-v3 .divider-dots span { width: 4px; height: 4px; border-radius: 50%; background: #34d399; }
+.sf-v3 .sub { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #34d399; }
+
+/* ========== TRAILWORK STAFFING ========== */
+.tw-v1 { background: #fdf8f0; border: 1px solid #eedfc0; gap: 6px; }
+.tw-v1 .name { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #1c1008; }
+.tw-v1 .name em { color: #d97706; font-style: normal; }
+.tw-v1 .trail { display: flex; gap: 3px; margin: 8px 0; align-items: center; }
+.tw-v1 .trail span { display: block; width: 6px; height: 6px; border-radius: 50%; background: #d97706; }
+.tw-v1 .trail .line { flex: 1; height: 1px; background: #d97706; opacity: 0.4; }
+.tw-v1 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #b8935a; }
+
+.tw-v2 { background: #fff; border: 1px solid #eaeaea; flex-direction: row; gap: 14px; align-items: center; }
+.tw-v2-arrow { width: 50px; height: 50px; flex-shrink: 0; }
+.tw-v2-words .name { font-family: 'Raleway', sans-serif; font-size: 21px; font-weight: 800; color: #1a1a1a; letter-spacing: 1px; }
+.tw-v2-words .name em { color: #d97706; font-style: normal; }
+.tw-v2-words .sub { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #bbb; margin-top: 3px; }
+
+.tw-v3 { background: linear-gradient(145deg, #1c1008 0%, #2d1a08 100%); gap: 4px; }
+.tw-v3 .name { font-family: 'Bebas Neue', sans-serif; font-size: 38px; letter-spacing: 5px; color: #f59e0b; line-height: 1; }
+.tw-v3 .tagline { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #92400e; margin-top: 2px; }
+.tw-v3 .sub { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #78350f; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <p class="hero-tag">For Rahima · Brand Exploration Vol. 3 · May 2026</p>
+  <h1>Six More Brand Concepts</h1>
+  <p class="hero-sub">Each name was selected with our Phoenix warehouse staffing niche in mind — and how it pairs with the BananaSplit ecosystem of housing + workforce.</p>
+</div>
+
+<div class="content">
+
+<!-- ===== CORNERSTONE STAFFING ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-b2b">Strong B2B · Trust Signal</span>
+      <h2>Cornerstone Staffing</h2>
+    </div>
+    <div class="brand-desc">
+      <p>A cornerstone is the first stone laid — everything is built from it. For our workers, we are the cornerstone of their new career. For employers, we're the cornerstone of their labor supply chain. Immediately projects stability and reliability to corporate clients.</p>
+      <p class="synergy">Synergy: pairs naturally with BananaSplit — "we provide the housing cornerstone, you provide the career cornerstone."</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Blueprint</span><span class="variant-desc">Stacked blocks — foundation layers</span></div>
+      <div class="logo-card cs-v1">
+        <div class="cs-v1-mark">
+          <div class="cs-v1-block" style="width:14px;height:14px;background:#6b8cba;"></div>
+          <div class="cs-v1-block" style="width:14px;height:22px;background:#3b6499;"></div>
+          <div class="cs-v1-block tall" style="width:14px;"></div>
+          <div class="cs-v1-block" style="width:14px;height:22px;background:#3b6499;"></div>
+          <div class="cs-v1-block" style="width:14px;height:14px;background:#6b8cba;"></div>
+        </div>
+        <div class="name">CORNERSTONE</div>
+        <div class="sub">Staffing · Phoenix AZ</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Diamond</span><span class="variant-desc">Diamond mark — precious, solid</span></div>
+      <div class="logo-card cs-v2">
+        <div class="cs-v2-diamond"><span>C</span></div>
+        <div class="cs-v2-words" style="margin-left:2px;">
+          <div class="name">Cornerstone</div>
+          <div class="sub">Staffing Group</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Arch</span><span class="variant-desc">Roman arch — structural permanence</span></div>
+      <div class="logo-card cs-v3">
+        <div class="cs-v3-arch"></div>
+        <div class="name">CORNERSTONE</div>
+        <div class="sub">Staffing Group</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== BRIDGEWAY STAFFING ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-eco">Ecosystem Fit · Mission-Aligned</span>
+      <h2>Bridgeway Staffing</h2>
+    </div>
+    <div class="brand-desc">
+      <p>A bridge connects two sides — we connect people to opportunity. "Bridgeway" implies a path, a route, a way through. Subtle but powerful for our mission. Also connects to "Bridge to Compassion" already in the BananaSplit partner ecosystem, creating a natural thematic family.</p>
+      <p class="synergy">Ecosystem note: BananaSplit works with Bridge to Compassion (BTC). "Bridgeway" creates a thematic family: Bridge → Bridgeway → BananaSplit.</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Span</span><span class="variant-desc">Bridge arc connecting two points</span></div>
+      <div class="logo-card bw-v1">
+        <svg width="110" height="40" viewBox="0 0 110 40" fill="none" style="margin-bottom:10px;">
+          <path d="M5 36 L5 20 Q5 5 55 5 Q105 5 105 20 L105 36" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <line x1="5" y1="36" x2="105" y2="36" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="28" y1="36" x2="28" y2="18" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="55" y1="36" x2="55" y2="9" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="82" y1="36" x2="82" y2="18" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="name"><em>Bridge</em>way</div>
+        <div class="sub">Staffing Group</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Serif</span><span class="variant-desc">Classic serif — trust and tradition</span></div>
+      <div class="logo-card bw-v2">
+        <div class="name">Bridgeway</div>
+        <div class="tagline">Staffing</div>
+        <div class="sub">Phoenix · Est. 2026</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Icon</span><span class="variant-desc">Two pillars + span — bridge mark</span></div>
+      <div class="logo-card bw-v3">
+        <svg class="bw-v3-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <rect x="4" y="30" width="8" height="14" rx="2" fill="#1e3a5f"/>
+          <rect x="36" y="30" width="8" height="14" rx="2" fill="#1e3a5f"/>
+          <path d="M4 32 Q24 8 44 32" stroke="#1e3a5f" stroke-width="2.5" fill="none"/>
+          <line x1="4" y1="32" x2="44" y2="32" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+          <line x1="16" y1="32" x2="16" y2="20" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="32" x2="24" y2="13" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="32" x2="32" y2="20" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="bw-v3-words">
+          <div class="name">Bridgeway Staffing</div>
+          <div class="sub">Phoenix · Arizona</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== SUMMIT WORKFORCE ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-asp">Aspirational · Worker + Employer</span>
+      <h2>Summit Workforce</h2>
+    </div>
+    <div class="brand-desc">
+      <p>Summit means the highest point — aspirational for workers climbing back, credible for employers who want peak performance. Clean, one-word identity that works nationally. The mountain silhouette creates instant visual recognition and works beautifully on uniforms and hard hats.</p>
+      <p class="synergy">Positioning: "We help people reach their Summit." Tagline writes itself.</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Bold Type</span><span class="variant-desc">Bebas condensed — industrial authority</span></div>
+      <div class="logo-card sw-v1">
+        <svg class="sw-v1-peak" width="80" height="36" viewBox="0 0 80 36" fill="none">
+          <path d="M4 34 L40 4 L76 34" stroke="#1e3a5f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 34 L40 14 L64 34" stroke="#3b82f6" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+        </svg>
+        <div class="name">SUMMIT</div>
+        <div class="sub">Workforce · Phoenix</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Mountain + Serif</span><span class="variant-desc">Peak icon — clean, professional</span></div>
+      <div class="logo-card sw-v2">
+        <svg class="sw-v2-mark" width="50" height="50" viewBox="0 0 50 50" fill="none">
+          <path d="M5 42 L25 8 L45 42 Z" stroke="#059669" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <path d="M14 42 L25 20 L36 42 Z" fill="#059669" opacity="0.12"/>
+          <circle cx="25" cy="8" r="3" fill="#059669"/>
+          <line x1="5" y1="42" x2="45" y2="42" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="sw-v2-words">
+          <div class="name">Summit Workforce</div>
+          <div class="sub">Phoenix · Est. 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Dark Navy</span><span class="variant-desc">Reversed — premium feel</span></div>
+      <div class="logo-card sw-v3">
+        <svg width="70" height="28" viewBox="0 0 70 28" fill="none" style="margin-bottom:8px;">
+          <path d="M3 26 L35 3 L67 26" stroke="#60a5fa" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 26 L35 10 L56 26" stroke="#93c5fd" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+        </svg>
+        <div class="name-top">SUMMIT</div>
+        <div class="rule"></div>
+        <div class="name-bot">WORKFORCE</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== NEXUS STAFFING GROUP ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-tech">Modern · Tech-Forward · Scalable</span>
+      <h2>Nexus Staffing Group</h2>
+    </div>
+    <div class="brand-desc">
+      <p>Nexus means a connection or link — we're the nexus between employer and worker. It sounds modern and technology-forward, which helps with larger corporate clients and ATS systems. Strong for a company that plans to scale and use tech (which we are — portal, smart locks, automation).</p>
+      <p class="synergy">Tech angle: aligns with our automation-first approach across BananaSplit and CoNest. "The connected workforce."</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Wordmark</span><span class="variant-desc">Purple accent — distinctive in market</span></div>
+      <div class="logo-card nx-v1">
+        <svg width="48" height="24" viewBox="0 0 48 24" fill="none" style="margin-bottom:10px;">
+          <circle cx="8" cy="12" r="5" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <circle cx="24" cy="12" r="5" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <circle cx="40" cy="12" r="5" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <line x1="13" y1="12" x2="19" y2="12" stroke="#7c3aed" stroke-width="1.5"/>
+          <line x1="29" y1="12" x2="35" y2="12" stroke="#7c3aed" stroke-width="1.5"/>
+          <circle cx="8" cy="12" r="2" fill="#7c3aed"/>
+          <circle cx="24" cy="12" r="2" fill="#7c3aed"/>
+          <circle cx="40" cy="12" r="2" fill="#7c3aed"/>
+        </svg>
+        <div class="name"><em>NEX</em>US</div>
+        <div class="sub">Staffing Group</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Hex Badge</span><span class="variant-desc">Hexagon — connectivity, structure</span></div>
+      <div class="logo-card nx-v2">
+        <svg class="nx-v2-hex" width="50" height="50" viewBox="0 0 50 50" fill="none">
+          <path d="M25 3 L46 14 L46 36 L25 47 L4 36 L4 14 Z" stroke="#7c3aed" stroke-width="2" fill="none"/>
+          <path d="M25 12 L38 19.5 L38 30.5 L25 38 L12 30.5 L12 19.5 Z" fill="#7c3aed" opacity="0.1"/>
+          <text x="25" y="30" font-family="Bebas Neue" font-size="16" fill="#7c3aed" text-anchor="middle">NX</text>
+        </svg>
+        <div class="nx-v2-words">
+          <div class="name">Nexus Staffing</div>
+          <div class="sub">Group · Phoenix AZ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Gradient Bold</span><span class="variant-desc">Blue-purple gradient — tech energy</span></div>
+      <div class="logo-card nx-v3">
+        <div class="name-big">NEXUS</div>
+        <div class="sub">Staffing Group · Phoenix</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== STEADFAST WORKFORCE ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-trust">Reliability · Employer Favorite</span>
+      <h2>Steadfast Workforce</h2>
+    </div>
+    <div class="brand-desc">
+      <p>Steadfast means unwavering, loyal, committed — exactly what warehouse employers need to hear. High no-show rates are the #1 pain point in industrial staffing. This name directly answers that fear before the sales conversation even begins. Particularly powerful for Amazon, UPS, and large logistics clients.</p>
+      <p class="synergy">Sales angle: "Our workers don't no-show. That's what Steadfast means." Strongest name for closing corporate B2B contracts.</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Classic Serif</span><span class="variant-desc">Teal rule — calm confidence</span></div>
+      <div class="logo-card sf-v1">
+        <div class="name"><em>Stead</em>fast</div>
+        <div class="rule"></div>
+        <div class="sub">Workforce Solutions</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Shield Mark</span><span class="variant-desc">Protection shield — we stand behind our workers</span></div>
+      <div class="logo-card sf-v2">
+        <svg class="sf-v2-shield" width="48" height="52" viewBox="0 0 48 52" fill="none">
+          <path d="M24 3 L44 10 L44 28 Q44 42 24 49 Q4 42 4 28 L4 10 Z" stroke="#0f766e" stroke-width="2" fill="none"/>
+          <path d="M24 10 L38 16 L38 28 Q38 38 24 44 Q10 38 10 28 L10 16 Z" fill="#0f766e" opacity="0.08"/>
+          <path d="M16 26 L21 31 L32 20" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="sf-v2-words">
+          <div class="name">Steadfast Workforce</div>
+          <div class="sub">Phoenix · Est. 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Dark Forest</span><span class="variant-desc">Deep green — strength, permanence</span></div>
+      <div class="logo-card sf-v3">
+        <div class="name">STEADFAST</div>
+        <div class="divider-dots"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="sub">Workforce · Phoenix</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== TRAILWORK STAFFING ===== -->
+<div class="brand-block">
+  <div class="brand-header">
+    <div class="brand-name-area">
+      <span class="brand-tag tag-bold">Bold · Western · Phoenix Spirit</span>
+      <h2>Trailwork Staffing</h2>
+    </div>
+    <div class="brand-desc">
+      <p>A portmanteau of "trailblazer" and "work" — we blaze the trail to employment. Has a distinctly Western, Phoenix spirit that competitors from outside the market can't easily copy. Warm amber tones connect to the Arizona desert aesthetic. Memorable and unique — no other staffing company is using this name.</p>
+      <p class="synergy">Local angle: deeply Phoenix. The desert trail metaphor resonates with Arizona culture and makes the brand feel genuinely local, not corporate transplant.</p>
+    </div>
+  </div>
+  <div class="variants-grid">
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V1 · Trail Dots</span><span class="variant-desc">Dotted path — the journey forward</span></div>
+      <div class="logo-card tw-v1">
+        <div class="name"><em>Trail</em>work</div>
+        <div class="trail">
+          <span></span><div class="line"></div>
+          <span></span><div class="line"></div>
+          <span></span><div class="line"></div>
+          <span></span>
+        </div>
+        <div class="sub">Staffing · Phoenix AZ</div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V2 · Arrow Mark</span><span class="variant-desc">Forward arrow — blazing ahead</span></div>
+      <div class="logo-card tw-v2">
+        <svg class="tw-v2-arrow" width="50" height="50" viewBox="0 0 50 50" fill="none">
+          <circle cx="25" cy="25" r="22" stroke="#d97706" stroke-width="2" fill="none"/>
+          <path d="M14 25 L32 25 M26 18 L33 25 L26 32" stroke="#d97706" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="tw-v2-words">
+          <div class="name"><em>Trail</em>work</div>
+          <div class="sub">Staffing Group</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-card-wrap">
+      <div class="logo-card-meta"><span class="v-tag">V3 · Dark Amber</span><span class="variant-desc">Desert night palette — bold and warm</span></div>
+      <div class="logo-card tw-v3">
+        <svg width="50" height="24" viewBox="0 0 50 24" fill="none" style="margin-bottom:8px;">
+          <circle cx="6" cy="12" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="18" cy="12" r="4" fill="#f59e0b" opacity="0.6"/>
+          <circle cx="30" cy="12" r="4" fill="#f59e0b" opacity="0.8"/>
+          <circle cx="42" cy="12" r="4" fill="#f59e0b"/>
+        </svg>
+        <div class="name">TRAILWORK</div>
+        <div class="tagline">Staffing · Phoenix</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="text-align:center;padding:48px 0 24px;border-top:1px solid #e8e5e0;">
+  <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#aaa;margin-bottom:6px;">Brand Exploration Vol. 3 of 3</p>
+  <p style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#ccc;">BananaSplit Group · Phoenix AZ · May 2026</p>
+  <p style="font-size:12px;color:#bbb;margin-top:12px;">← <a href="index.html" style="color:#b8935a;text-decoration:none;">View Vol. 1 + 2 (27 concepts)</a></p>
+</div>
+
+</div>
+</body>
+</html>
