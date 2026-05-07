@@ -70,15 +70,16 @@ body { background: #f2f1ee; color: #1a1a1a; font-family: 'DM Sans', sans-serif; 
 @media (max-width: 800px) { .variants-grid { grid-template-columns: 1fr; } }
 
 /* LOGO CARD WRAPPER */
-.logo-card-wrap { display: flex; flex-direction: column; gap: 8px; }
-.logo-card-meta { display: flex; align-items: center; justify-content: space-between; padding: 0 2px; }
-.v-tag { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #888; font-weight: 600; }
-.variant-name { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #bbb; text-align: right; }
+.logo-card-wrap { display: flex; flex-direction: column; gap: 0; }
+.logo-card-meta { display: flex; align-items: center; justify-content: space-between; padding: 6px 4px; background: #f2f1ee; border-bottom: 1px solid #e0ddd8; }
+.v-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #555; font-weight: 700; }
+.variant-name { font-size: 9px; letter-spacing: 1px; color: #999; text-align: right; font-style: italic; }
+.logo-card-caption { font-size: 9px; letter-spacing: 1px; color: #bbb; text-align: center; padding: 8px 4px 0; font-style: italic; }
 
 /* LOGO CARDS — BASE */
-.logo-card-wrap:hover .logo-card { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+.logo-card-wrap:hover .logo-card { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.10); }
 .logo-card {
-  border-radius: 18px;
+  border-radius: 0 0 18px 18px;
   padding: 40px 28px;
   display: flex;
   flex-direction: column;
